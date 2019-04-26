@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RuntimeFrameworkVersion>2.1.10</RuntimeFrameworkVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="KeyFiles\GoogleCloudErrorReporting\ktbmsystem-037d08f77b7d.json" />
+    <None Remove="KeyFiles\GoogleCloudFirestore\ktbmsystem-6c416f58d8a1.json" />
+    <None Remove="KeyFiles\GoogleCloudLogging\ktbmsystem-4ad6a480dba7.json" />
+    <None Remove="KeyFiles\GoogleCloudMonitoring\ktbmsystem-828ff9c02286.json" />
+    <None Remove="KeyFiles\GoogleCloudRedis\ktbmsystem-0d870ca9b485.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="KeyFiles\GoogleCloudErrorReporting\ktbmsystem-037d08f77b7d.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="KeyFiles\GoogleCloudFirestore\ktbmsystem-6c416f58d8a1.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="KeyFiles\GoogleCloudLogging\ktbmsystem-4ad6a480dba7.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="KeyFiles\GoogleCloudMonitoring\ktbmsystem-828ff9c02286.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="KeyFiles\GoogleCloudRedis\ktbmsystem-0d870ca9b485.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Base\Base.csproj" />
+  </ItemGroup>
+
+</Project>
